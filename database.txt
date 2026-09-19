@@ -1,0 +1,29 @@
+# CRUD operation
+C --Create
+R-- Read
+U-- update
+D-- Delete
+
+
+
+Create table Table_name(
+    col1 datatype primary key autoincrement,
+    col2 datatype,
+    col3 datatype
+)
+
+
+Rules:
+-table must contain only one primary key
+-autoincrement --> used to generate primary key automatically
+
+constraint::
+primary key
+foreign key
+null
+not null 
+check 
+
+
+
+database-->table(enities)-->columns(attributes)--> rows(tuples)--> data(information)
