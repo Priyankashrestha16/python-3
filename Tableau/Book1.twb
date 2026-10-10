@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='967df4ff1cfc84ff28e7e2848a3c59dc4dec18e9fe9286fe72511b78339b9c2e' _.fcp.WorkbookFingerprinting.true...creator-author-id='967df4ff1cfc84ff28e7e2848a3c59dc4dec18e9fe9286fe72511b78339b9c2e' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='967df4ff1cfc84ff28e7e2848a3c59dc4dec18e9fe9286fe72511b78339b9c2e' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='967df4ff1cfc84ff28e7e2848a3c59dc4dec18e9fe9286fe72511b78339b9c2e' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pizza_sales' inline='true' name='federated.017infb14pfbb615waeba0rbsefb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pizza_sales' name='textscan.17emmnx0niwnps0zxpdql0kw5cye'>
+            <connection class='textscan' directory='D:/Pythondjango/Dataset' filename='pizza_sales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.17emmnx0niwnps0zxpdql0kw5cye' name='pizza_sales.csv' table='[pizza_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='pizza_id' ordinal='0' />
+            <column datatype='integer' name='order_id' ordinal='1' />
+            <column datatype='string' name='pizza_name_id' ordinal='2' />
+            <column datatype='integer' name='quantity' ordinal='3' />
+            <column datatype='date' name='order_date' ordinal='4' />
+            <column datatype='datetime' name='order_time' ordinal='5' />
+            <column datatype='real' name='unit_price' ordinal='6' />
+            <column datatype='real' name='total_price' ordinal='7' />
+            <column datatype='string' name='pizza_size' ordinal='8' />
+            <column datatype='string' name='pizza_category' ordinal='9' />
+            <column datatype='string' name='pizza_ingredients' ordinal='10' />
+            <column datatype='string' name='pizza_name' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pizza_id]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_name_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_name_id]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_name_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quantity]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>quantity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[order_date]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>order_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[order_time]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>order_time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unit_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unit_price]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>unit_price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_price]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>total_price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_size]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_size</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_category]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_ingredients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_ingredients]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_ingredients</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_name]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='pizza_sales.csv' datatype='table' name='[__tableau_internal_object_id__].[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]' role='measure' type='quantitative' />
+      <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+      <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Order Time' datatype='datetime' name='[order_time]' role='dimension' type='ordinal' />
+      <column caption='Pizza Category' datatype='string' name='[pizza_category]' role='dimension' type='nominal' />
+      <column caption='Pizza Id' datatype='integer' name='[pizza_id]' role='dimension' type='ordinal' />
+      <column caption='Pizza Ingredients' datatype='string' name='[pizza_ingredients]' role='dimension' type='nominal' />
+      <column caption='Pizza Name' datatype='string' name='[pizza_name]' role='dimension' type='nominal' />
+      <column caption='Pizza Name Id' datatype='string' name='[pizza_name_id]' role='dimension' type='nominal' />
+      <column caption='Pizza Size' datatype='string' name='[pizza_size]' role='dimension' type='nominal' />
+      <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+      <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+      <column caption='Unit Price' datatype='real' name='[unit_price]' role='measure' type='quantitative' />
+      <column-instance column='[pizza_category]' derivation='None' name='[none:pizza_category:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_020sqb31vsyqxa13ehg1k112pvyj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/30/2026 03:10:13 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>pizza_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pizza_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48620</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14635</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_name_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_name_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_name_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quantity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[order_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>275</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[order_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>12816</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unit_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[unit_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unit_price</remote-alias>
+              <ordinal>6</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_price</remote-alias>
+              <ordinal>7</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_size</remote-alias>
+              <ordinal>8</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_category</remote-alias>
+              <ordinal>9</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_ingredients</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_ingredients]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_ingredients</remote-alias>
+              <ordinal>10</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_name</remote-alias>
+              <ordinal>11</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:pizza_category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chicken&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Veggie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Supreme&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Classic&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nepal&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='pizza_sales.csv' id='pizza_sales.csv_C7927AC7371D4D32AE54CE2A7AB4017E'>
+            <properties context=''>
+              <relation connection='textscan.17emmnx0niwnps0zxpdql0kw5cye' name='pizza_sales.csv' table='[pizza_sales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='pizza_id' ordinal='0' />
+                  <column datatype='integer' name='order_id' ordinal='1' />
+                  <column datatype='string' name='pizza_name_id' ordinal='2' />
+                  <column datatype='integer' name='quantity' ordinal='3' />
+                  <column datatype='date' name='order_date' ordinal='4' />
+                  <column datatype='datetime' name='order_time' ordinal='5' />
+                  <column datatype='real' name='unit_price' ordinal='6' />
+                  <column datatype='real' name='total_price' ordinal='7' />
+                  <column datatype='string' name='pizza_size' ordinal='8' />
+                  <column datatype='string' name='pizza_category' ordinal='9' />
+                  <column datatype='string' name='pizza_ingredients' ordinal='10' />
+                  <column datatype='string' name='pizza_name' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_7C2C946FA42F497689E4ADF1A1BC53F3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Pizza Category' />
+        <param name='target' value='Sheet 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>Total Sales by Pizza Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pizza_sales' name='federated.017infb14pfbb615waeba0rbsefb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.017infb14pfbb615waeba0rbsefb'>
+            <column-instance column='[pizza_category]' derivation='None' name='[none:pizza_category:nk]' pivot='key' type='nominal' />
+            <column caption='Pizza Category' datatype='string' name='[pizza_category]' role='dimension' type='nominal' />
+            <column-instance column='[total_price]' derivation='Sum' name='[sum:total_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.017infb14pfbb615waeba0rbsefb].[sum:total_price:qk]' value='c&quot;$&quot;#,##0,.00K' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.017infb14pfbb615waeba0rbsefb].[none:pizza_category:nk]' />
+              <lod column='[federated.017infb14pfbb615waeba0rbsefb].[none:pizza_category:nk]' />
+              <text column='[federated.017infb14pfbb615waeba0rbsefb].[sum:total_price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3183425664901733' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.017infb14pfbb615waeba0rbsefb].[sum:total_price:qk]</rows>
+        <cols>[federated.017infb14pfbb615waeba0rbsefb].[none:pizza_category:nk]</cols>
+      </table>
+      <simple-id uuid='{07FA61CF-EC74-4846-932C-0CDAF012E402}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.017infb14pfbb615waeba0rbsefb].[none:pizza_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.017infb14pfbb615waeba0rbsefb].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0C88230F-AAE6-4489-A3F9-1DDD52B492CB}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AiAs7f8Db0ftfivS7W0AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
