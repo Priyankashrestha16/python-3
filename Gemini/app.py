@@ -6,7 +6,7 @@ st.header(
 )
 
 st.subheader(
-    'Version geimini 4-argon'
+    'Version gemini-3.8-flash'
 )
 
 ## Text Placeholder
