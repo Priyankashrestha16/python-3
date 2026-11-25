@@ -62,10 +62,14 @@ def show_linear():
 
 
         if st.button('Predict',type='primary'):
-            input_data = np.array([[
-                    indicator_3, indicator_2, indicator_1, indicator_4
-                ]])
-            input_scale = linear_scaler.transform(input_data)
-            prediction = linear_model.predict(input_scale)[0]
+            if None in (indicator_1, indicator_2, indicator_3, indicator_4):
+               st.warning("Please fill in all four indicators before predicting.")
 
-            st.success(f"Estimated GLD Value: {prediction[0]:.2f}")
+            else:
+                input_data = np.array([[
+                        indicator_3, indicator_2, indicator_1, indicator_4
+                    ]])
+                input_scale = linear_scaler.transform(input_data)
+                prediction = linear_model.predict(input_scale)[0]
+
+                st.success(f"Estimated GLD Value: {prediction[0]:.2f}")
