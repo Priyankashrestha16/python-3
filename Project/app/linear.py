@@ -73,3 +73,5 @@ def show_linear():
                 prediction = linear_model.predict(input_scale)[0]
 
                 st.success(f"Estimated GLD Value: {prediction[0]:.2f}")
+
+        

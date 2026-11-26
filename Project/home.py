@@ -4,14 +4,14 @@ from app.randomforest import show_randomforest
 
 
 st.set_page_config(
-    page_title= 'GOLD Estimation',
+    page_title= 'GOLD Value Prediction',
     layout='centered'
 )
 
 # st.header('Gold Value Estimation')
 
 def home():
-    st.header('Gold Value Estimation')
+    st.header('Gold Value Prediction')
 
     if 'selected_model' not in st.session_state:
         st.session_state.selected_model = None
@@ -40,7 +40,7 @@ def home():
 # st.header('Home Page')
   
 
-Home = st.Page(home, title='Gold Value Estimation', default=True)
+Home = st.Page(home, title='Gold Value Prediction', default=True)
 
 linear = st.Page("app/linear.py", title="Linear Regression")
 rf = st.Page("app/randomforest.py", title="Random Forest")
